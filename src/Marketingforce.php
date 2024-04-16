@@ -73,6 +73,18 @@ class Marketingforce
     }
 
     /**
+     * 企业微信号号列表
+     * @param $params
+     * @return mixed
+     * @throws InvalidResponseException
+     */
+    public function getEnterprisePersonalList($params)
+    {
+        $url = '/busi-etp/enterprisePersonal/enterprisePersonalList';
+        return $this->doRequest('post', $url, ['json' => $params]);
+    }
+
+    /**
      * 发送私聊消息
      * @param $params
      * @return mixed
