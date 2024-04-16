@@ -16,12 +16,5 @@
         "psr-4": {
             "Ycstar\\Marketingforce\\": "src"
         }
-    },
-    "extra": {
-        "think": {
-            "config": {
-                "weidaijia": "src/Config/config.php"
-            }
-        }
     }
 }
